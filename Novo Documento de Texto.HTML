@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SITE BOLADÃO</title>
+    <style>
+        /* Estilos CSS simples */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #output {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SITE BOLADÃO</h1>
+    
+    <p>Digite algo abaixo:</p>
+    <input type="text" id="inputText">
+    <button onclick="mostrarTexto()">Mostrar Texto</button>
+    
+    <div id="output"></div>
+
+    <script>
+        // Função JavaScript para mostrar o texto inserido quando o botão é clicado
+        function mostrarTexto() {
+            var inputText = document.getElementById("inputText").value;
+            var output = document.getElementById("output");
+            output.innerHTML = "Você digitou: " + inputText;
+        }
+    </script>
+</body>
+</html>
